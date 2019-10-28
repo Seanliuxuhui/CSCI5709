@@ -1,0 +1,218 @@
+body {
+  position: relative;
+}
+
+h1{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#my_account{
+  display: none;
+}
+
+#login{
+  display: none;
+}
+.web_title{
+  font-size: 64px;
+}
+/* Color to navigation bar */
+
+.navbar-custom {
+  color: #FFFFFF;
+  background-color: #f4511e;
+  z-index: 999;
+  width: 100%;
+}
+
+/* Color to jumbotron */
+
+.jumbotron {
+  background-color: #f4511e;
+  color: #fff;
+  padding-top: 130px;
+  border-radius: 0px;
+}
+
+/* style to columns in home page*/
+
+.column {
+  max-width: 50%;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+}
+
+/* style to row in home page*/
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* style to table in restaurant page*/
+
+.table {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* style to table heading and table data */
+
+.th, .td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+
+/* hover effects to table rows */
+
+td:hover {
+  background-color: #F5F5F5;
+}
+
+/* form container */
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/*input fields */
+
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* focus inputs */
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* style for the submit/login button */
+
+.form-container .btn {
+  background-color: #f4511e;
+  color: white;
+  padding: 5px;
+  border-color: grey;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 5px;
+  opacity: 0.9;
+}
+
+/* hover effects to buttons */
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.h6 {
+  color: black;
+}
+
+.h2 {
+  color: black;
+  text-align: center;
+}
+
+/* style for the facebook login button */
+
+button.btn.facebook {
+  background: #32508E;
+}
+
+/* style for the google login button */
+
+button.btn.google {
+  background: #FFFFFF;
+  color: black;
+}
+
+.center {
+  margin: 50px;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  display: none;
+  z-index: 20;
+  padding-top: 100px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.search_item {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#search_results {
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 320px;
+  height: 600px;
+  z-index: 10;
+  position: absolute;
+  overflow-y: scroll;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.container_bottom {
+  margin-top: 30px;
+}
+
+.search_results_img {
+  border-radius: 16px;
+  height: 60px;
+  margin-bottom: 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.myfooter {
+  width: 100%;
+  margin-top: 60px;
+  background-color: #f4511e;
+}
+
+.myfooter a {
+  color: white;
+  text-decoration: none;
+}
+
+.website_des {
+  padding-left: 50px;
+}
+
+.copyright {
+  background-color: #af3a15;
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {
+  .navbar-custom {
+    position: fixed;
+    top: 0px;
+  }
+}

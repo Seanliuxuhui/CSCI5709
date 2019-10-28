@@ -1,0 +1,90 @@
+body {
+  font-size: 16px;
+}
+
+/* popular food .recommendation card */
+
+.popular-food {
+  width: 80%;
+  height: 20%;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.popular-food:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* add gray background to the even number of popular food list */
+
+.popular-food:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* food name of popular list */
+
+.food-description {
+  height: 5%;
+  font-size: 1.8vw;
+}
+
+/* food picture of popular list */
+
+.dish-pic {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/* food rating star of popular list */
+
+#avg-ratings {
+  right: 16px;
+  bottom: 0px;
+  position: absolute;
+  font-size: 1.5vw;
+}
+
+/* food ordering amounts of popular list */
+
+#dish-orders {
+  bottom: 0px;
+  position: absolute;
+  font-size: 1.5vw;
+}
+
+/* food name of popular list */
+
+#dish-name {
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+/* food price of popular list */
+
+#dish-price {
+  font-size: 2vw;
+}
+
+/* food price and food rating and food orders division */
+
+.detail-food {
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  #popular-container {
+      margin-top: 3em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #popular-container {
+      margin-top: 6em;
+  }
+}

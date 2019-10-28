@@ -1,0 +1,29 @@
+{
+  "name": "csci-5709-project-speed",
+  "version": "1.0.0",
+  "description": "Course project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.cs.dal.ca/xuhui/5709project.git"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "mysql": "^2.16.0",
+    "nconf": "^0.10.0",
+    "path": "^0.12.7",
+    "requirejs": "^2.3.6",
+    "server.js": "^1.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

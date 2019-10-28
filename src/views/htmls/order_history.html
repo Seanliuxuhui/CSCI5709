@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- makes web page responsive -->
+  <title>Food Delivery</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <!-- fontawesome core CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <script data-main="../js/main" src="https://requirejs.org/docs/release/2.3.3/minified/require.js"></script>
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/order_history.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+    <div class="container">
+      <ul class="navbar-nav ">
+        <li class=" active">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="category.html">Foods</a>
+        </li>
+        <li>
+          <a class="nav-link" href="morerecommendation.html">Recommendation</a>
+        </li>
+        <li>
+          <a class="nav-link" href="login.html" id="login">Login</a>
+        </li>
+        <li class='active'>
+          <a class="nav-link" href="account.html" id="my_account">My Account</a>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline">
+      <!-- taken from font awesome -->
+      <input class="form-control form-control-sm mr-3 w-75" id="input_search" type="text" placeholder="Search" aria-label="Search">
+      <i class="fas fa-search" id="btn_search"></i>
+    </form>
+  </nav>
+  <div class="back" id="back">
+    <div class="search_results container" id="search_results">
+    </div>
+  </div>
+  <div class="review_back" id="review_back">
+    <div class="review_interface container" id="review_interface">
+      <h2 id="review_name">NAME</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-4 review_img" id="review_img"></div>
+        <div class="col-md-7">
+          <div class="rating">
+            <span class="stars" id="5">☆</span>
+            <span class="stars" id="4">☆</span>
+            <span class="stars" id="3">☆</span>
+            <span class="stars" id="2">☆</span>
+            <span class="stars" id="1">☆</span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h3>Comment</h3>
+        <textarea class="textarea" id="textarea" rows="4" cols="50"></textarea>
+      </div>
+      <button class="btn btn-danger btn_sb_ev" id="btn_sb_ev" type="button" name="button">SUBMIT</button>
+    </div>
+  </div>
+  <div class="container title_container">
+    <a href="account.html" class="btn btn-outline-danger">Back</a>
+    <h1>Order History</h1>
+    <hr>
+  </div>
+  <div class="container my_container" id="order_history_container">
+  </div>
+  <footer class="myfooter font-small blue pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="website_des col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase" style="color:white">Food Delivery</h5>
+          <p style="color:white">We provide users with fast, cheap but high quality food delivery services</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase" style="color:white">Legal Inforamtion</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#!">Cookies</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase" style="color:white">About Us</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Help</a>
+            </li>
+            <li>
+              <a href="#!">Career</a>
+            </li>
+            <li>
+              <a href="#!">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center py-3">
+      <p style="color:white">© 2019 Copyright: CSCI 5709 Group Project</p>
+    </div>
+  </footer>
+</body>
+
+</html>

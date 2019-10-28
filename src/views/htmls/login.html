@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- makes web page responsive -->
+  <title>Food Delivery</title>
+  <style>
+    body {
+      background-image: url("../images/bg.jpg");
+      background-size: cover;
+    }
+  </style>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <!-- fontawesome core CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/login.css" rel="stylesheet">
+  <!--Custom JS-->
+  <script data-main="../js/main" src="https://requirejs.org/docs/release/2.3.3/minified/require.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+    <div class="container">
+      <ul class="navbar-nav ">
+        <li>
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="category.html">Foods</a>
+        </li>
+        <li>
+          <a class="nav-link" href="morerecommendation.html">Recommendation</a>
+        </li>
+        <li class="active">
+          <a class="nav-link" href="login.html" id="login">Login</a>
+        </li>
+        <li>
+          <a class="nav-link" href="account.html" id="my_account">My Account</a>
+        </li>
+
+      </ul>
+    </div>
+    <form class="form-inline">
+      <!-- taken from font awesome -->
+      <input class="form-control form-control-sm mr-3 w-75" id="input_search" type="text" placeholder="Search" aria-label="Search">
+      <i class="fas fa-search" id="btn_search"></i>
+    </form>
+  </nav>
+  <div class="back" id="back">
+    <div class="search_results container" id="search_results">
+    </div>
+  </div>
+  <div class="container">
+    <div class="form" id="loginForm">
+      <h3 style="color:White; -webkit-text-stroke: 0.25px black;">Log in</h3>
+
+      <form class="form-container" name="loginform" method="post" id="formid">
+
+        <input id="email" type="email" placeholder="Email address" name="email" required>
+
+        <input id="pwd" type="password" placeholder="Password" name="pwd" required>
+
+        <label>  <input type="checkbox"  name="remember"> Remember me</label>
+
+        <input type="button" class="btn" value="LOGIN" id="submit" />
+
+        <a class="nav-link text-center" href="passwordUpdate.html"> Problem in logging?</a>
+
+        <u><a class="nav-link text-center" href="signup.html"> New user? Sign up</a></u>
+
+        <h6 style="text-align: center;">or</h6>
+
+      </form>
+      <form class="form-container">
+        <!-- icons taken from font awesome -->
+        <button class="btn facebook" disabled><i class="fab fa-facebook-f"></i> Log in with Facebook</button>
+        <button class="btn google" disabled><i class="fab fa-google"></i> Log in with Google</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

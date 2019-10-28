@@ -1,0 +1,57 @@
+/* style for popular recommendation div */
+
+.popular {
+  padding: 20px;
+  height: 100%;
+}
+
+.popular_img{
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  height: 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* style for name and price of each .recommendation dish */
+
+.popular h5 {
+  color: #5F5C5C;
+  margin-top: 10px;
+  font-size: 1.5vw;
+}
+
+/* style for the whole .recommendation part */
+
+.recommendation {
+
+  height: auto;
+}
+
+/* style for recommendation-pannel */
+
+.recommendation-pannel {
+  width: 100%;
+}
+
+/* style for 'recommendation' word */
+
+#recommendation-text {
+  font-size: 3vw;
+  display: inline-block;
+}
+
+/* style for 'more' text on recommendation pannel */
+
+#recommendation-more {
+  font-size: 2vw;
+  display: inline-block;
+  float: right;
+}
+
+/* style for 'more' text on recommendation pannel when hover */
+
+.selected {
+  color: #249BF6;
+}

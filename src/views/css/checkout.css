@@ -1,0 +1,35 @@
+.separator {
+    width: 100%;
+    border: 1px solid darkgrey;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.threeEm {
+    margin-top: 3em;
+}
+.container-margin-bottom {
+    margin-bottom: 2em;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float:right !important;
+}
+.strong {
+    font-weight: bold;
+}
+
+.white-color {
+    color: white;
+}

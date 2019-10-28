@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- makes web page responsive -->
+  <title>Food Delivery</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <!-- fontawesome core CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script data-main="../js/main" src="https://requirejs.org/docs/release/2.3.3/minified/require.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGuzyZPtPIoIpO2bYKRtMzjUWjTLQraw4"></script>
+
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/recommendation.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+    <div class="container">
+      <ul class="navbar-nav ">
+        <li class=" active">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="category.html">Foods</a>
+        </li>
+        <li>
+          <a class="nav-link" href="morerecommendation.html">Recommendation</a>
+        </li>
+        <li class="active">
+          <a class="nav-link" href="login.html" id="login">Login</a>
+        </li>
+        <li>
+          <a class="nav-link" href="account.html" id="my_account">My Account</a>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline">
+      <!-- taken from font awesome -->
+      <input class="form-control form-control-sm mr-3 w-75" id="input_search" type="text" placeholder="Search" aria-label="Search">
+      <i class="fas fa-search" id="btn_search"></i>
+    </form>
+  </nav>
+  <div class="back" id="back">
+    <div class="search_results container" id="search_results">
+    </div>
+  </div>
+  <div class="jumbotron text-center">
+    <h1 class="web_title">Happy Lunch</h1>
+    <p>We deliver food</p>
+  </div>
+  <div class="container">
+    <div class="recommendation-pannel">
+      <h2 id="recommendation-text">Today's specials</h2>
+      <p id="recommendation-more">More</p>
+    </div>
+    <div class="recommendation row" id="recommendation">
+      <div class="popular col-md-3">
+        <div class="popular_img"></div>
+        <h5 class="dish-name">Beef Noodle</h5>
+        <h5 class="dish-price">$ 10</h5>
+      </div>
+
+      <div class="popular col-md-3">
+        <div class="popular_img"></div>
+        <h5 class="dish-name">Indian Chicken</h5>
+        <h5 class="dish-price">$ 11</h5>
+      </div>
+
+      <div class="popular col-md-3">
+        <div class="popular_img"></div>
+        <h5 class="dish-name">Spaghetti</h5>
+        <h5 class="dish-price">$ 11</h5>
+      </div>
+      <div class="popular col-md-3">
+        <div class="popular_img"></div>
+        <h5 class="dish-name">Sushi Combo</h5>
+        <h5 class="dish-price">$ 21</h5>
+      </div>
+    </div>
+
+    <!-- song's work - location for A4 -->
+    <div class="row container_bottom">
+      <div class="col-sm-8" style="text-align:center;">
+        <div id="googleMap" style="width:90%;height:90%;"></div>
+        <h5>Find Restaurants Nearby to Order Food</h5>
+        <div>
+          <button class="btn btn-danger btn_reLocate" id="btn_reLocate">Find Restaurants</button> &nbsp;
+          <select id="distance">
+              <option value="1">1 km</option>
+              <option value="5" selected="selected">5 km</option>
+              <option value="10">10 km</option>
+            </select>
+        </div>
+      </div>
+      <div class="col-sm-4" style="text-align:center;">
+        <div>
+          <img src="../images/delivery.jpg" width="250" height="250" alt="Become a delivery executive">
+          <h5>Become a delivery executive</h5>
+          <button class="btn btn-danger" id="deliverJoin" data-toggle="modal" data-target="#deliverModal">Join now</button>
+          <div id="deliverContainer"></div>
+        </div>
+        <br><br>
+        <div>
+          <img src="../images/partner.gif" width="250" height="250" alt="Become a partner">
+          <h5>Become a partner </h5>
+          <button class="btn btn-danger" id="partnerJoin" data-toggle="modal" data-target="#partnerModal">Join now</button>
+          <div id="partnerContainer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="myfooter font-small blue pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="website_des col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase" style="color:white">Food Delivery</h5>
+          <p style="color:white">We provide users with fast, cheap but high quality food delivery services</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase" style="color:white">Legal Inforamtion</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#!">Cookies</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase" style="color:white">About Us</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Help</a>
+            </li>
+            <li>
+              <a href="#!">Career</a>
+            </li>
+            <li>
+              <a href="#!">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center py-3">
+      <p style="color:white">© 2019 Copyright: CSCI 5709 Group Project</p>
+    </div>
+  </footer>
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</body>
+
+</html>

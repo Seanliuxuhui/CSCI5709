@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- makes web page responsive -->
+  <title>Food Delivery</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <!-- W3 CSS -->
+  <!-- fontawesome core CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <script data-main="../js/main" src="https://requirejs.org/docs/release/2.3.3/minified/require.js"></script>
+  <!-- Custom CSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/morerecommendation.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+    <div class="container">
+      <ul class="navbar-nav ">
+        <li>
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="category.html">Foods</a>
+        </li>
+        <li class="active">
+          <a class="nav-link" href="morerecommendation.html">Recommendation</a>
+        </li>
+        <li>
+          <a class="nav-link" href="login.html" id="login">Login</a>
+        </li>
+        <li>
+          <a class="nav-link" href="account.html" id="my_account">My Account</a>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline">
+      <!-- taken from font awesome -->
+      <input class="form-control form-control-sm mr-3 w-75" id="input_search" type="text" placeholder="Search" aria-label="Search">
+      <i class="fas fa-search" id="btn_search"></i>
+    </form>
+  </nav>
+  <div class="back" id="back">
+    <div class="search_results container" id="search_results">
+    </div>
+  </div>
+  <!-- popular food element -->
+  <div class="container" id="popular-container">
+
+  </div>
+  <footer class="myfooter font-small blue pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="website_des col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase" style="color:white">Food Delivery</h5>
+          <p style="color:white">We provide users with fast, cheap but high quality food delivery services</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase" style="color:white">Legal Inforamtion</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#!">Cookies</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase" style="color:white">About Us</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Help</a>
+            </li>
+            <li>
+              <a href="#!">Career</a>
+            </li>
+            <li>
+              <a href="#!">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center py-3">
+      <p style="color:white">© 2019 Copyright: CSCI 5709 Group Project</p>
+    </div>
+  </footer>
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#loginForm {
+    margin-top: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  #loginForm {
+      margin-top: 7em;
+  }
+}

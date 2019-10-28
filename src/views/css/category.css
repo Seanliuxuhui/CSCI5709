@@ -1,0 +1,106 @@
+.category_container {
+  margin-top: 90px;
+  margin-bottom: 300px;
+}
+
+#Asia {
+  display: block;
+  background-image: url("../images/as.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 25px;
+}
+
+#NA {
+  display: block;
+  background-image: url("../images/na.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 25px;
+}
+
+#Chinese {
+  display: none;
+  background-image: url("../images/ch.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 25px;
+}
+
+#India {
+  display: none;
+  background-image: url("../images/in.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 25px;
+}
+
+#Japanese {
+  display: none;
+  background-image: url("../images/jp.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 25px;
+}
+
+#category_detial_container {
+  display: none;
+  margin-top: 30px;
+  height: 600px;
+  width: auto;
+  padding: 16px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cat_item {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  padding: 16px;
+  border: 10px solid white;
+}
+
+.food_name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}

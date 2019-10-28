@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- makes web page responsive -->
+  <title>Food Delivery</title>
+  <style>
+    body {
+      background-image: url("../images/bg.jpg");
+      background-size: cover;
+    }
+  </style>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <!-- fontawesome core CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/signup.css" rel="stylesheet">
+  <script data-main="../js/main" src="https://requirejs.org/docs/release/2.3.3/minified/require.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+    <div class="container">
+      <ul class="navbar-nav ">
+        <li class=" active">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="category.html">Foods</a>
+        </li>
+        <li>
+          <a class="nav-link" href="morerecommendation.html">Recommendation</a>
+        </li>
+        <li>
+          <a class="nav-link" href="login.html" id="login">Login</a>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline">
+      <!-- taken from font awesome -->
+      <input class="form-control form-control-sm mr-3 w-75" id="input_search" type="text" placeholder="Search" aria-label="Search">
+      <i class="fas fa-search" id="btn_search"></i>
+    </form>
+  </nav>
+  <div class="back" id="back">
+    <div class="search_results container" id="search_results">
+    </div>
+  </div>
+  <div class="container">
+    <div class="form" id="signForm">
+      <h3 style="color:White; -webkit-text-stroke: 0.25px black;">Sign up</h3>
+      <form class="form-container" name="signupform" method="post" id="formid">
+        <input type="text" placeholder="Full name" id="name" name="name" required>
+        <input type="text" placeholder="Phone number" id="contact" name="contact" required>
+        <input type="email" placeholder="Email address" id="email" name="email" required>
+        <input type="password" placeholder="Create Password" id="password1" name="password1" required>
+        <input type="password" placeholder="Confirm Password" id="password2" name="password2" required>
+        <input type="button" class="btn" value="SIGNUP" id="submit">
+        <p style="font-size:10px;">By signing up, you agree with the <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></p>
+        <h6 style="text-align: center;">or</h6>
+      </form>
+    </div>
+    <div class="form" id="sign1Form">
+      <form action="#" class="form-container">
+        <!-- icons taken from font awesome -->
+        <button class="btn facebook" disabled><i class="fab fa-facebook-f"></i>  Log in with Facebook</button>
+        <button class="btn google" disabled><i class="fab fa-google"></i>  Log in with Google</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
